@@ -1,0 +1,16 @@
+{
+  "name": "lojinha",
+  "version": "1.0.0",
+  "description": "Lojinha: frontend em HTML/CSS/JS e testes E2E",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "frontend": "http-server frontend -p 5500 -c-1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^16.3.0",
+    "http-server": "^14.1.1"
+  }
+}

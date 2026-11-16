@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Faz a página se ajustar à largura de celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lojinha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Lojinha</h1>
+
+      <!-- Mensagens de carregamento ou de erro aparecem aqui -->
+      <p id="mensagem" class="mensagem" data-cy="mensagem">Carregando produtos...</p>
+
+      <!-- Lista inicialmente vazia: o app.js preenche com os dados da API -->
+      <ul id="lista-produtos" class="lista-produtos" data-cy="lista-produtos"></ul>
+    </main>
+
+    <!-- type="module" carrega o script depois do HTML e permite usar import/export -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

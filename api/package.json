@@ -1,0 +1,29 @@
+{
+  "name": "lojinha-api",
+  "version": "1.0.0",
+  "description": "API REST da Lojinha (Node.js + Express + PostgreSQL)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "migrate": "node migrate.js",
+    "migrate:test": "node --env-file=.env.test migrate.js",
+    "test": "node --test tests/preco.test.js",
+    "test:integration": "npm run migrate:test && node --env-file=.env.test --test tests/produtos.integration.test.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
+  }
+}
